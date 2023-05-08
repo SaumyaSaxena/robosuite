@@ -45,7 +45,6 @@ class MujocoXML(object):
         default = self.create_default_element("default")
         default_classes = self._get_default_classes(default)
         self._replace_defaults_inline(default_dic=default_classes)
-
         # Remove original default classes
         self.root.remove(default)
 
@@ -141,7 +140,6 @@ class MujocoXML(object):
             string.write(ET.tostring(self.root, encoding="unicode"))
             if mode == "mujoco":
                 import mujoco
-
                 model = mujoco.MjModel.from_xml_string(string.getvalue())
                 return model
             raise ValueError("Unkown model mode: {}. Available options are: {}".format(mode, ",".join(available_modes)))
@@ -244,12 +242,15 @@ class MujocoXML(object):
         if cls_name is not None:
             # If the tag for this element is contained in our default dic, we add any defaults that are not
             # explicitly specified in this
+            # import ipdb; ipdb.set_trace()
             tag_attrs = default_dic[cls_name].get(root.tag, None)
             if tag_attrs is not None:
                 for k, v in tag_attrs.items():
                     if root.get(k, None) is None:
                         root.set(k, v)
-        # Loop through all child elements
+        # for child in root:
+        #     print(child.tag)
+        #     print(child.attrib)
         for child in root:
             self._replace_defaults_inline(default_dic=default_dic, root=child)
 

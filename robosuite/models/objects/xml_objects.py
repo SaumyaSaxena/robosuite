@@ -297,3 +297,156 @@ class DoorObject(MujocoXMLObject):
         dic = super().important_sites
         dic.update({"handle": self.naming_prefix + "handle"})
         return dic
+    
+
+class RedMugObject(MujocoXMLObject):
+    """
+    Mug object
+    """
+
+    def __init__(self, name):
+        super().__init__(
+            xml_path_completion("objects/mujoco_scanned_objects/ACE_Coffee_Mug_Kristen_16_oz_cup/model.xml"),
+            name=name,
+            joints=[dict(type="free", damping="0.0005")],
+            obj_type="all",
+            duplicate_collision_geoms=False,
+        )
+
+class WhiteMugObject(MujocoXMLObject):
+    """
+    Mug object
+    """
+
+    def __init__(self, name):
+        super().__init__(
+            xml_path_completion("objects/mujoco_scanned_objects/Room_Essentials_Mug_White_Yellow/model.xml"),
+            name=name,
+            joints=[dict(type="free", damping="0.0005")],
+            obj_type="all",
+            duplicate_collision_geoms=False,
+        )
+
+class BlueMugObject(MujocoXMLObject):
+    """
+    Mug object
+    """
+
+    def __init__(self, name):
+        super().__init__(
+            xml_path_completion("objects/mujoco_scanned_objects/Cole_Hardware_Mug_Classic_Blue/model.xml"),
+            name=name,
+            joints=[dict(type="free", damping="0.0005")],
+            obj_type="all",
+            duplicate_collision_geoms=False,
+        )
+
+class ReebokShoeObject(MujocoXMLObject):
+
+    def __init__(self, name):
+        super().__init__(
+            xml_path_completion("objects/mujoco_scanned_objects/Reebok_TURBO_RC/model.xml"),
+            name=name,
+            joints=[dict(type="free", damping="0.0005")],
+            obj_type="all",
+            duplicate_collision_geoms=False,
+        )
+
+class ReebokBlueShoeObject(MujocoXMLObject):
+
+    def __init__(self, name):
+        super().__init__(
+            xml_path_completion("objects/mujoco_scanned_objects/Reebok_CL_RAYEN/model.xml"),
+            name=name,
+            joints=[dict(type="free", damping="0.0005")],
+            obj_type="all",
+            duplicate_collision_geoms=False,
+        )
+
+class ReebokBlackShoeObject(MujocoXMLObject):
+
+    def __init__(self, name):
+        super().__init__(
+            xml_path_completion("objects/mujoco_scanned_objects/Reebok_JR_ZIG_COOPERSTOWN_MR/model.xml"),
+            name=name,
+            joints=[dict(type="free", damping="0.0005")],
+            obj_type="all",
+            duplicate_collision_geoms=False,
+        )
+
+class ReebokPinkShoeObject(MujocoXMLObject):
+
+    def __init__(self, name):
+        super().__init__(
+            xml_path_completion("objects/mujoco_scanned_objects/Reebok_ZIGLITE_RUSH/model.xml"),
+            name=name,
+            joints=[dict(type="free", damping="0.0005")],
+            obj_type="all",
+            duplicate_collision_geoms=False,
+        )
+
+class GreenShoeObject(MujocoXMLObject):
+
+    def __init__(self, name):
+        super().__init__(
+            xml_path_completion("objects/mujoco_scanned_objects/TROCHILUS_BOOST/model.xml"),
+            name=name,
+            joints=[dict(type="free", damping="0.0005")],
+            obj_type="all",
+            duplicate_collision_geoms=False,
+        )
+
+class PinkHeelObject(MujocoXMLObject):
+
+    def __init__(self, name):
+        super().__init__(
+            xml_path_completion("objects/mujoco_scanned_objects/Chelsea_lo_fl_rdheel_zAQrnhlEfw8/model.xml"),
+            name=name,
+            joints=[dict(type="free", damping="0.0005")],
+            obj_type="all",
+            duplicate_collision_geoms=False,
+        )
+
+class BrownHeelObject(MujocoXMLObject):
+
+    def __init__(self, name):
+        super().__init__(
+            xml_path_completion("objects/mujoco_scanned_objects/Chelsea_BlkHeelPMP_DwxLtZNxLZZ/model.xml"),
+            name=name,
+            joints=[dict(type="free", damping="0.0005")],
+            obj_type="all",
+            duplicate_collision_geoms=False,
+        )
+
+class Supplement0Object(MujocoXMLObject):
+
+    def __init__(self, name):
+        super().__init__(
+            xml_path_completion("objects/mujoco_scanned_objects/Hyaluronic_Acid/model.xml"),
+            name=name,
+            joints=[dict(type="free", damping="0.0005")],
+            obj_type="all",
+            duplicate_collision_geoms=False,
+        )
+
+class Supplement1Object(MujocoXMLObject):
+
+    def __init__(self, name):
+        super().__init__(
+            xml_path_completion("objects/mujoco_scanned_objects/Inositol/model.xml"),
+            name=name,
+            joints=[dict(type="free", damping="0.0005")],
+            obj_type="all",
+            duplicate_collision_geoms=False,
+        )
+
+class Supplement2Object(MujocoXMLObject):
+
+    def __init__(self, name):
+        super().__init__(
+            xml_path_completion("objects/mujoco_scanned_objects/Folic_Acid/model.xml"),
+            name=name,
+            joints=[dict(type="free", damping="0.0005")],
+            obj_type="all",
+            duplicate_collision_geoms=False,
+        )

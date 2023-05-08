@@ -1,5 +1,6 @@
 from .manipulator_model import ManipulatorModel
 from .sawyer_robot import Sawyer
+from .sawyer_robot_with_gripper import SawyerWithGripper
 from .baxter_robot import Baxter
 from .panda_robot import Panda
 from .jaco_robot import Jaco

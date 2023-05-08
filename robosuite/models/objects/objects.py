@@ -18,9 +18,9 @@ from robosuite.utils.mjcf_utils import (
 
 # Dict mapping geom type string keywords to group number
 GEOMTYPE2GROUP = {
-    "collision": {0},  # If we want to use a geom for physics, but NOT visualize
+    "collision": {4},  # If we want to use a geom for physics, but NOT visualize
     "visual": {1},  # If we want to use a geom for visualization, but NOT physics
-    "all": {0, 1},  # If we want to use a geom for BOTH physics + visualization
+    "all": {4, 1},  # If we want to use a geom for BOTH physics + visualization
 }
 
 GEOM_GROUPS = GEOMTYPE2GROUP.keys()
@@ -360,6 +360,7 @@ class MujocoXMLObject(MujocoObject, MujocoXML):
         # Loop through each of these pairs and modify them according to @elements arg
         for i, (parent, element) in enumerate(geom_pairs):
             # Delete non-relevant geoms and rename remaining ones
+    
             if not _should_keep(element):
                 parent.remove(element)
             else:
@@ -367,7 +368,7 @@ class MujocoXMLObject(MujocoObject, MujocoXML):
                 g_name = g_name if g_name is not None else f"g{i}"
                 element.set("name", g_name)
                 # Also optionally duplicate collision geoms if requested (and this is a collision geom)
-                if self.duplicate_collision_geoms and element.get("group") in {None, "0"}:
+                if self.duplicate_collision_geoms and element.get("group") in {None, "4"}:
                     parent.append(self._duplicate_visual_from_collision(element))
                     # Also manually set the visual appearances to the original collision model
                     element.set("rgba", array_to_string(OBJECT_COLLISION_COLOR))
@@ -381,7 +382,6 @@ class MujocoXMLObject(MujocoObject, MujocoXML):
         template["rgba"] = "1 0 0 0"
         template["name"] = "default_site"
         obj.append(ET.Element("site", attrib=template))
-
         return obj
 
     def exclude_from_prefixing(self, inp):

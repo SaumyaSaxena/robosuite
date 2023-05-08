@@ -16,6 +16,19 @@ from .xml_objects import (
     CanVisualObject,
     PlateWithHoleObject,
     DoorObject,
+    RedMugObject,
+    WhiteMugObject,
+    BlueMugObject,
+    ReebokShoeObject,
+    ReebokBlueShoeObject,
+    ReebokBlackShoeObject,
+    ReebokPinkShoeObject,
+    PinkHeelObject,
+    BrownHeelObject,
+    GreenShoeObject,
+    Supplement0Object,
+    Supplement1Object,
+    Supplement2Object,
 )
 from .primitive import *
 from .composite import *

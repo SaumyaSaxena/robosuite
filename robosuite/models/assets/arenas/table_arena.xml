@@ -17,6 +17,13 @@
     <material name="table_mat" texture="textable" />
 
   </asset>
+  
+  <visual>
+    <map fogstart="1.5" fogend="5" force="0.1" znear="0.01"/>
+    <quality shadowsize="4096" offsamples="4"/>
+    <headlight ambient="0.4 0.4 0.4"/>
+  </visual>
+
   <worldbody>
     <!-- Floor -->
     <geom condim="3" group="1" material="floorplane" name="floor" pos="0 0 0" size="3 3 .125" type="plane"/>
