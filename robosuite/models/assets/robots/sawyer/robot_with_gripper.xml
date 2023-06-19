@@ -223,6 +223,7 @@
                                               <!-- This below camera is from robosuite -->
 
                                               <camera mode="fixed" name="eye_in_hand" pos="0.06 0 0" quat="0 0.707108 0.707108 0" fovy="75"/>
+                                              <camera mode="fixed" name="eye_in_hand_45" pos="0.06 0 0" quat="0 0.707108 0.707108 0" fovy="45"/>
                                               <camera mode="fixed" name="eye_in_hand_90" pos="0.08 0 0.02" quat="0 0.707108 0.707108 0" fovy="90"/>
                                               <camera mode="fixed" name="eye_in_hand_120" pos="0.08 0 0.05" quat="0 0.707108 0.707108 0" fovy="120"/>
 
