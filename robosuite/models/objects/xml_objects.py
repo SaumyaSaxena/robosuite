@@ -450,3 +450,53 @@ class Supplement2Object(MujocoXMLObject):
             obj_type="all",
             duplicate_collision_geoms=False,
         )
+
+class CardboardBoxObject(MujocoXMLObject):
+    def __init__(self, name):
+        super().__init__(
+            xml_path_completion("objects/mujoco_scanned_objects/Google_Cardboard_Original_package/model.xml"),
+            name=name,
+            joints=[dict(type="free", damping="0.0005")],
+            obj_type="all",
+            duplicate_collision_geoms=False,
+        )
+
+class BlueLunchPack(MujocoXMLObject):
+    def __init__(self, name):
+        super().__init__(
+            xml_path_completion("objects/mujoco_scanned_objects/Olive_Kids_Game_On_Lunch_Box/model.xml"),
+            name=name,
+            joints=[dict(type="free", damping="0.0005")],
+            obj_type="all",
+            duplicate_collision_geoms=False,
+        )
+
+class RedLunchPack(MujocoXMLObject):
+    def __init__(self, name):
+        super().__init__(
+            xml_path_completion("objects/mujoco_scanned_objects/Paul_Frank_Dot_Lunch_Box/model.xml"),
+            name=name,
+            joints=[dict(type="free", damping="0.0005")],
+            obj_type="all",
+            duplicate_collision_geoms=False,
+        )
+
+class WhiteCerealPack(MujocoXMLObject):
+    def __init__(self, name):
+        super().__init__(
+            xml_path_completion("objects/mujoco_scanned_objects/ReadytoUse_Rolled_Fondant_Pure_White_24_oz_box/model.xml"),
+            name=name,
+            joints=[dict(type="free", damping="0.0005")],
+            obj_type="all",
+            duplicate_collision_geoms=False,
+        )
+
+class YellowCerealPack(MujocoXMLObject):
+    def __init__(self, name):
+        super().__init__(
+            xml_path_completion("objects/mujoco_scanned_objects/Vans_Cereal_Honey_Nut_Crunch_11_oz_box/model.xml"),
+            name=name,
+            joints=[dict(type="free", damping="0.0005")],
+            obj_type="all",
+            duplicate_collision_geoms=False,
+        )

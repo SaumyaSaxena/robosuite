@@ -10,7 +10,7 @@ def get_obj_from_name(obj_name):
         model = BlueMugObject(name=obj_name)
     elif 'box' in obj_name or 'block' in obj_name:
         model = BoxObject(name=obj_name, size=[0.024, 0.024, 0.03])
-    elif 'cereal' in obj_name:
+    elif 'red_cereal' in obj_name:
         model = CerealObject(name=obj_name)
     elif 'reebok_shoe' in obj_name:
         model = ReebokShoeObject(name=obj_name)
@@ -32,6 +32,16 @@ def get_obj_from_name(obj_name):
         model = Supplement1Object(name=obj_name)
     elif 'supplement2' in obj_name:
         model = Supplement2Object(name=obj_name)
+    elif 'cardboard' in obj_name:
+        model = CardboardBoxObject(name=obj_name)
+    elif 'blue_lunch_pack' in obj_name:
+        model = BlueLunchPack(name=obj_name)
+    elif 'red_lunch_pack' in obj_name:
+        model = RedLunchPack(name=obj_name)
+    elif 'white_cereal_pack' in obj_name:
+        model = WhiteCerealPack(name=obj_name)
+    elif 'yellow_cereal_pack' in obj_name:
+        model = YellowCerealPack(name=obj_name)
     else:
         raise NotImplementedError(f'Object with name {obj_name} not available.')
     return model

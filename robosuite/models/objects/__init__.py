@@ -30,6 +30,11 @@ from .xml_objects import (
     Supplement0Object,
     Supplement1Object,
     Supplement2Object,
+    CardboardBoxObject,
+    BlueLunchPack,
+    RedLunchPack,
+    WhiteCerealPack,
+    YellowCerealPack,
 )
 from .primitive import *
 from .composite import *

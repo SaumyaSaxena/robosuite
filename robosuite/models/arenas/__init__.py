@@ -6,3 +6,4 @@ from .bins_arena import BinsArena
 from .empty_arena import EmptyArena
 from .wipe_arena import WipeArena
 from .multitask_arena import MultiTaskArena
+from .multitask_no_walls_arena import MultiTaskNoWallsArena
