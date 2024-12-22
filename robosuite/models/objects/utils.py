@@ -4,6 +4,8 @@ from robosuite.models.objects.xml_objects import *
 def get_obj_from_name(obj_name):
     if 'white_mug' in obj_name:
         model = WhiteMugObject(name=obj_name)
+    elif 'bread' in obj_name:
+        model = BreadObject(name=obj_name)
     elif 'red_mug' in obj_name:
         model = RedMugObject(name=obj_name)
     elif 'blue_mug' in obj_name:

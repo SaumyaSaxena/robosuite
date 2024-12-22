@@ -53,7 +53,7 @@
     <!-- grey color -->
     <site name="placeSiteA" pos="0.1 0.45 0.1" size="0.02" rgba="0.5 0.5 0.5 0"/>
     <!-- purple color -->
-    <site name="placeSiteB" pos="-0.1 0.5 0.1" size="0.08" rgba="0.5 0.5 1 1"/>
+    <site name="placeSiteB" pos="-0.1 0.5 0.1" size="0.02" rgba="0.5 0.5 1 1"/>
     <!-- hidden site for now -->
     <site name="placeSiteC" pos="0.1 0.45 0.1" size="0.02" rgba="1 0.5 0.5 0"/>
 

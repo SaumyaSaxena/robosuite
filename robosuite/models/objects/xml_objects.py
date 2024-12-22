@@ -468,7 +468,7 @@ class BlueLunchPack(MujocoXMLObject):
             name=name,
             joints=[dict(type="free", damping="0.0005")],
             obj_type="all",
-            duplicate_collision_geoms=False,
+            duplicate_collision_geoms=True,
         )
 
 class RedLunchPack(MujocoXMLObject):
@@ -478,7 +478,7 @@ class RedLunchPack(MujocoXMLObject):
             name=name,
             joints=[dict(type="free", damping="0.0005")],
             obj_type="all",
-            duplicate_collision_geoms=False,
+            duplicate_collision_geoms=True,
         )
 
 class WhiteCerealPack(MujocoXMLObject):
