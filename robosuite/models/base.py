@@ -242,7 +242,6 @@ class MujocoXML(object):
         if cls_name is not None:
             # If the tag for this element is contained in our default dic, we add any defaults that are not
             # explicitly specified in this
-            # import ipdb; ipdb.set_trace()
             tag_attrs = default_dic[cls_name].get(root.tag, None)
             if tag_attrs is not None:
                 for k, v in tag_attrs.items():

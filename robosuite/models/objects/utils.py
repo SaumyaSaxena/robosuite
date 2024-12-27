@@ -44,6 +44,20 @@ def get_obj_from_name(obj_name):
         model = WhiteCerealPack(name=obj_name)
     elif 'yellow_cereal_pack' in obj_name:
         model = YellowCerealPack(name=obj_name)
+    elif 'blue_cereal_pack' in obj_name:
+        model = BlueCerealPack(name=obj_name)
+    elif 'orange_cereal_pack' in obj_name:
+        model = OrangeCerealPack(name=obj_name)
+    elif 'purple_lego_set' in obj_name:
+        model = PurpleLegoSet(name=obj_name)
+    elif 'yellow_lego_set' in obj_name:
+        model = YellowLegoSet(name=obj_name)
+    elif 'porcelain_pitcher' in obj_name:
+        model = PorcelainPitcher(name=obj_name)
+    elif 'porcelain_teapot' in obj_name:
+        model = PorcelainTeapot(name=obj_name)
+    elif 'squirrel' in obj_name:
+        model = Squirrel(name=obj_name)
     else:
         raise NotImplementedError(f'Object with name {obj_name} not available.')
     return model

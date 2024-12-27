@@ -35,6 +35,13 @@ from .xml_objects import (
     RedLunchPack,
     WhiteCerealPack,
     YellowCerealPack,
+    BlueCerealPack,
+    OrangeCerealPack,
+    PurpleLegoSet,
+    YellowLegoSet,
+    PorcelainPitcher,
+    PorcelainTeapot,
+    Squirrel,
 )
 from .primitive import *
 from .composite import *

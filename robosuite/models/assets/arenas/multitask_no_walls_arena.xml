@@ -1,6 +1,5 @@
 <mujoco model="multitask_no_walls_arena">
   <option timestep='0.0025' iterations="50" tolerance="1e-10" solver="Newton" jacobian="dense" cone="elliptic"/>
-  
   <asset>
       <!-- night sky -->
       <!-- <texture name="skybox" type="skybox" builtin="gradient" rgb1=".08 .09 .10" rgb2="0 0 0"
@@ -78,7 +77,7 @@
     <!-- <camera name="side_cap" fovy="60" mode='targetbody' target='tablelink' pos='-3.0 0.6 0.9'/> -->
 
     <!-- <camera name="front_cap3" fovy="50" mode='targetbody' target='tablelink' pos='0.0 2.0 0.9'/> -->
-    <camera name="front_cap3" fovy="70" mode='targetbody' target='tablelink' pos='0.0 2.0 0.9'/>
+    <camera name="front_cap3" fovy="50" mode='targetbody' target='tablelink' pos='0.0 2.0 0.9'/>
     <!-- <camera name="front_cap3" fovy="60" mode='targetbody' target='tablelink' pos='-2.0 0.6 0.9'/> -->
 
     <camera name="corner4_peginsert_side_2" fovy="45" mode="fixed" pos="0.8 0.0 0.5" quat="0.4204 -0.3156 0.5106 -0.6802"/>
@@ -92,7 +91,8 @@
 
       <equality>
         <weld body1="gripper0_mocap" body2="gripper0_eef" solref="0.02 1"></weld>
-        <weld body1="gripper0_mocap" body2="gripper0_eef" solref="0.02 1" active="false"></weld>
+        <!-- <weld body1="gripper0_mocap" body2="gripper0_eef" solref="0.02 1" active="false"></weld> -->
+        <weld name="suction" site1="placeSiteA" site2="placeSiteC" active="false"/>
     </equality>
 
 </mujoco>

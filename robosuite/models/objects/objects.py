@@ -20,9 +20,9 @@ from robosuite.utils.mjcf_utils import (
 
 # Dict mapping geom type string keywords to group number
 GEOMTYPE2GROUP = {
-    "collision": {4},  # If we want to use a geom for physics, but NOT visualize
+    "collision": {4, 0},  # If we want to use a geom for physics, but NOT visualize
     "visual": {1},  # If we want to use a geom for visualization, but NOT physics
-    "all": {4, 1},  # If we want to use a geom for BOTH physics + visualization
+    "all": {4, 1, 0},  # If we want to use a geom for BOTH physics + visualization
 }
 
 GEOM_GROUPS = GEOMTYPE2GROUP.keys()

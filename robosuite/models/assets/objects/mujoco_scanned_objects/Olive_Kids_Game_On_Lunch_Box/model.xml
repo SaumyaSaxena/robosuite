@@ -39,39 +39,40 @@
   <worldbody>
     <body>
     <body name="object" quat="0.70710678 -0.70710678 0 0">
-      <geom pos="0 0 -0.1" material="material_0" mesh="model" type="mesh" contype="0" conaffinity="0" group="1" name="g0"/>
-      <geom pos="0 0 -0.1" mesh="model_collision_0" type="mesh" group="0" name="g1"/>
-      <geom pos="0 0 -0.1" mesh="model_collision_1" type="mesh" group="0" name="g2"/>
-      <geom pos="0 0 -0.1" mesh="model_collision_2" type="mesh" group="0" name="g3"/>
-      <geom pos="0 0 -0.1" mesh="model_collision_3" type="mesh" group="0" name="g4"/>
-      <geom pos="0 0 -0.1" mesh="model_collision_4" type="mesh" group="0" name="g5"/>
-      <geom pos="0 0 -0.1" mesh="model_collision_5" type="mesh" group="0" name="g6"/>
-      <geom pos="0 0 -0.1" mesh="model_collision_6" type="mesh" group="0" name="g7"/>
-      <geom pos="0 0 -0.1" mesh="model_collision_7" type="mesh" group="0" name="g8"/>
-      <geom pos="0 0 -0.1" mesh="model_collision_8" type="mesh" group="0" name="g9"/>
-      <geom pos="0 0 -0.1" mesh="model_collision_9" type="mesh" group="0" name="g10"/>
-      <geom pos="0 0 -0.1" mesh="model_collision_10" type="mesh" group="0" name="g11"/>
-      <geom pos="0 0 -0.1" mesh="model_collision_11" type="mesh" group="0" name="g12"/>
-      <geom pos="0 0 -0.1" mesh="model_collision_12" type="mesh" group="0" name="g13"/>
-      <geom pos="0 0 -0.1" mesh="model_collision_13" type="mesh" group="0" name="g14"/>
-      <geom pos="0 0 -0.1" mesh="model_collision_14" type="mesh" group="0" name="g15"/>
-      <geom pos="0 0 -0.1" mesh="model_collision_15" type="mesh" group="0" name="g16"/>
-      <geom pos="0 0 -0.1" mesh="model_collision_16" type="mesh" group="0" name="g17"/>
-      <geom pos="0 0 -0.1" mesh="model_collision_17" type="mesh" group="0" name="g18"/>
-      <geom pos="0 0 -0.1" mesh="model_collision_18" type="mesh" group="0" name="g19"/>
-      <geom pos="0 0 -0.1" mesh="model_collision_19" type="mesh" group="0" name="g20"/>
-      <geom pos="0 0 -0.1" mesh="model_collision_20" type="mesh" group="0" name="g21"/>
-      <geom pos="0 0 -0.1" mesh="model_collision_21" type="mesh" group="0" name="g22"/>
-      <geom pos="0 0 -0.1" mesh="model_collision_22" type="mesh" group="0" name="g23"/>
-      <geom pos="0 0 -0.1" mesh="model_collision_23" type="mesh" group="0" name="g24"/>
-      <geom pos="0 0 -0.1" mesh="model_collision_24" type="mesh" group="0" name="g25"/>
-      <geom pos="0 0 -0.1" mesh="model_collision_25" type="mesh" group="0" name="g26"/>
-      <geom pos="0 0 -0.1" mesh="model_collision_26" type="mesh" group="0" name="g27"/>
-      <geom pos="0 0 -0.1" mesh="model_collision_27" type="mesh" group="0" name="g28"/>
-      <geom pos="0 0 -0.1" mesh="model_collision_28" type="mesh" group="0" name="g29"/>
-      <geom pos="0 0 -0.1" mesh="model_collision_29" type="mesh" group="0" name="g30"/>
-      <geom pos="0 0 -0.1" mesh="model_collision_30" type="mesh" group="0" name="g31"/>
-      <geom pos="0 0 -0.1" mesh="model_collision_31" type="mesh" group="0" name="g32"/>
+      <geom pos="0 0 -0.1" material="material_0" mesh="model" type="mesh" contype="0" conaffinity="0" group="1" condim="1"/>
+      <geom pos="0 0 -0.1" material="material_0" mesh="model" type="mesh" contype="0" conaffinity="0" group="0" condim="1"/>
+      <geom pos="0 0 -0.1" mesh="model_collision_0" type="mesh" group="4" condim="1"/>
+      <geom pos="0 0 -0.1" mesh="model_collision_1" type="mesh" group="4" condim="1"/>
+      <geom pos="0 0 -0.1" mesh="model_collision_2" type="mesh" group="4" condim="1"/>
+      <geom pos="0 0 -0.1" mesh="model_collision_3" type="mesh" group="4" condim="1"/>
+      <geom pos="0 0 -0.1" mesh="model_collision_4" type="mesh" group="4" condim="1"/>
+      <geom pos="0 0 -0.1" mesh="model_collision_5" type="mesh" group="4" condim="1"/>
+      <geom pos="0 0 -0.1" mesh="model_collision_6" type="mesh" group="4" condim="1"/>
+      <geom pos="0 0 -0.1" mesh="model_collision_7" type="mesh" group="4" condim="1"/>
+      <geom pos="0 0 -0.1" mesh="model_collision_8" type="mesh" group="4" condim="1"/>
+      <geom pos="0 0 -0.1" mesh="model_collision_9" type="mesh" group="4" condim="1"/>
+      <geom pos="0 0 -0.1" mesh="model_collision_10" type="mesh" group="4" condim="1"/>
+      <geom pos="0 0 -0.1" mesh="model_collision_11" type="mesh" group="4" condim="1"/>
+      <geom pos="0 0 -0.1" mesh="model_collision_12" type="mesh" group="4" condim="1"/>
+      <geom pos="0 0 -0.1" mesh="model_collision_13" type="mesh" group="4" condim="1"/>
+      <geom pos="0 0 -0.1" mesh="model_collision_14" type="mesh" group="4" condim="1"/>
+      <geom pos="0 0 -0.1" mesh="model_collision_15" type="mesh" group="4" condim="1"/>
+      <geom pos="0 0 -0.1" mesh="model_collision_16" type="mesh" group="4" condim="1"/>
+      <geom pos="0 0 -0.1" mesh="model_collision_17" type="mesh" group="4" condim="1"/>
+      <geom pos="0 0 -0.1" mesh="model_collision_18" type="mesh" group="4" condim="1"/>
+      <geom pos="0 0 -0.1" mesh="model_collision_19" type="mesh" group="4" condim="1"/>
+      <geom pos="0 0 -0.1" mesh="model_collision_20" type="mesh" group="4" condim="1"/>
+      <geom pos="0 0 -0.1" mesh="model_collision_21" type="mesh" group="4" condim="1"/>
+      <geom pos="0 0 -0.1" mesh="model_collision_22" type="mesh" group="4" condim="1"/>
+      <geom pos="0 0 -0.1" mesh="model_collision_23" type="mesh" group="4" condim="1"/>
+      <geom pos="0 0 -0.1" mesh="model_collision_24" type="mesh" group="4" condim="1"/>
+      <geom pos="0 0 -0.1" mesh="model_collision_25" type="mesh" group="4" condim="1"/>
+      <geom pos="0 0 -0.1" mesh="model_collision_26" type="mesh" group="4" condim="1"/>
+      <geom pos="0 0 -0.1" mesh="model_collision_27" type="mesh" group="4" condim="1"/>
+      <geom pos="0 0 -0.1" mesh="model_collision_28" type="mesh" group="4" condim="1"/>
+      <geom pos="0 0 -0.1" mesh="model_collision_29" type="mesh" group="4" condim="1"/>
+      <geom pos="0 0 -0.1" mesh="model_collision_30" type="mesh" group="4" condim="1"/>
+      <geom pos="0 0 -0.1" mesh="model_collision_31" type="mesh" group="4" condim="1"/>
     </body>
     <site rgba="1 0 0 1" size="0.02" pos="0 0 -0.05" name="bottom_site"/>
     <site rgba="0 1 0 1" size="0.02" pos="0 0 0.05" name="top_site"/>

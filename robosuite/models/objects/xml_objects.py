@@ -468,7 +468,7 @@ class BlueLunchPack(MujocoXMLObject):
             name=name,
             joints=[dict(type="free", damping="0.0005")],
             obj_type="all",
-            duplicate_collision_geoms=True,
+            duplicate_collision_geoms=False,
         )
 
 class RedLunchPack(MujocoXMLObject):
@@ -478,7 +478,7 @@ class RedLunchPack(MujocoXMLObject):
             name=name,
             joints=[dict(type="free", damping="0.0005")],
             obj_type="all",
-            duplicate_collision_geoms=True,
+            duplicate_collision_geoms=False,
         )
 
 class WhiteCerealPack(MujocoXMLObject):
@@ -495,6 +495,76 @@ class YellowCerealPack(MujocoXMLObject):
     def __init__(self, name):
         super().__init__(
             xml_path_completion("objects/mujoco_scanned_objects/Vans_Cereal_Honey_Nut_Crunch_11_oz_box/model.xml"),
+            name=name,
+            joints=[dict(type="free", damping="0.0005")],
+            obj_type="all",
+            duplicate_collision_geoms=False,
+        )
+
+class BlueCerealPack(MujocoXMLObject):
+    def __init__(self, name):
+        super().__init__(
+            xml_path_completion("objects/mujoco_scanned_objects/Crunch_Girl_Scouts_Candy_Bars_Peanut_Butter_Creme_78_oz_box/model.xml"),
+            name=name,
+            joints=[dict(type="free", damping="0.0005")],
+            obj_type="all",
+            duplicate_collision_geoms=False,
+        )
+
+class OrangeCerealPack(MujocoXMLObject):
+    def __init__(self, name):
+        super().__init__(
+            xml_path_completion("objects/mujoco_scanned_objects/VANS_FIRE_ROASTED_VEGGIE_CRACKERS_GLUTEN_FREE/model.xml"),
+            name=name,
+            joints=[dict(type="free", damping="0.0005")],
+            obj_type="all",
+            duplicate_collision_geoms=False,
+        )
+
+class PurpleLegoSet(MujocoXMLObject):
+    def __init__(self, name):
+        super().__init__(
+            xml_path_completion("objects/mujoco_scanned_objects/Lego_Friends_Advent_Calendar/model.xml"),
+            name=name,
+            joints=[dict(type="free", damping="0.0005")],
+            obj_type="all",
+            duplicate_collision_geoms=False,
+        )
+
+class YellowLegoSet(MujocoXMLObject):
+    def __init__(self, name):
+        super().__init__(
+            xml_path_completion("objects/mujoco_scanned_objects/LEGO_Bricks_More_Creative_Suitcase/model.xml"),
+            name=name,
+            joints=[dict(type="free", damping="0.0005")],
+            obj_type="all",
+            duplicate_collision_geoms=False,
+        )
+
+class PorcelainPitcher(MujocoXMLObject):
+    def __init__(self, name):
+        super().__init__(
+            xml_path_completion("objects/mujoco_scanned_objects/Threshold_Porcelain_Pitcher_White/model.xml"),
+            name=name,
+            joints=[dict(type="free", damping="0.0005")],
+            obj_type="all",
+            duplicate_collision_geoms=False,
+        )
+
+class PorcelainTeapot(MujocoXMLObject):
+    def __init__(self, name):
+        super().__init__(
+            xml_path_completion("objects/mujoco_scanned_objects/Threshold_Porcelain_Teapot_White/model.xml"),
+            name=name,
+            joints=[dict(type="free", damping="0.0005")],
+            obj_type="all",
+            duplicate_collision_geoms=False,
+        )
+
+class Squirrel(MujocoXMLObject):
+    def __init__(self, name):
+        super().__init__(
+            xml_path_completion("objects/mujoco_scanned_objects/Squirrel/model.xml"),
             name=name,
             joints=[dict(type="free", damping="0.0005")],
             obj_type="all",

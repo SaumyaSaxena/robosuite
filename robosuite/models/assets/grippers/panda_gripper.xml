@@ -59,6 +59,7 @@
     <!-- <equality>
         <weld body1="mocap" body2="eef" solref="0.02 1"></weld>
         <weld body1="mocap" body2="eef" solref="0.02 1" active="false"></weld>
+        <weld name="suction" site1="ft_frame" site2="ft_frame" active="false"/>
     </equality> -->
 
 </mujoco>

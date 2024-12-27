@@ -5,9 +5,10 @@ from robosuite.models.grippers import gripper_factory
 from robosuite.models.arenas import TableArena, MultiTaskNoWallsArena
 from robosuite.models.objects import CerealObject
 import mujoco
-from mujoco import viewer
-from moviepy.editor import ImageSequenceClip
+# from mujoco import viewer
+# from moviepy.editor import ImageSequenceClip
 from robosuite.models.objects.primitive.box import BoxObject
+from robosuite.models.objects.utils import get_obj_from_name
 
 
 # import os
@@ -33,6 +34,9 @@ def test_sawyer_mt_env():
     # mujoco_robot.set_base_xpos([0, 0, 0])
 
     # world.merge(mujoco_robot)
+
+    # model = mujoco.MjModel.from_xml_path("/home/saumyas/sims/robosuite/robosuite/models/assets/objects/bread.xml")
+    # import ipdb; ipdb.set_trace()
 
     mujoco_arena = MultiTaskNoWallsArena()
     world.merge(mujoco_arena)
@@ -66,13 +70,23 @@ def test_sawyer_mt_env():
     world.worldbody.append(block_dist2_body)
     world.merge_assets(block_dist2)
 
+    obj = get_obj_from_name('bread')
+    obj_body = obj.get_obj()
+    obj_body.set('pos', f'-0.4 0.6 {-obj.bottom_offset[2]}')
+    
+    world.worldbody.append(obj_body)
+    world.merge_assets(obj)
+
+    obj._get_object_subtree()
+
     world.root.find('compiler').set('inertiagrouprange', '0 5')
     world.root.find('compiler').set('inertiafromgeom', 'auto')
+
     model = world.get_model(mode="mujoco")
     data = mujoco.MjData(model)
     
     renderer = mujoco.Renderer(model, 480, 480)
-    # viewer.launch(model, data)
+    viewer.launch(model, data)
     imgs = []
     save_gif = True
 

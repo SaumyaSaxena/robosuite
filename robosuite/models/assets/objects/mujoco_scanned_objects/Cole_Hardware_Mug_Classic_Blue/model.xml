@@ -40,6 +40,7 @@
     <body>
     <body name="object" pos="0.0 0.3 0.03">
       <geom material="material_0" mesh="model" type="mesh" contype="0" conaffinity="0" group="1"/>
+      <geom material="material_0" mesh="model" type="mesh" contype="0" conaffinity="0" group="0"/>
       <geom mesh="model_collision_0" type="mesh" group="4"/>
       <geom mesh="model_collision_1" type="mesh" group="4"/>
       <geom mesh="model_collision_2" type="mesh" group="4"/>
