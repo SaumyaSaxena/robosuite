@@ -56,6 +56,8 @@ def get_obj_from_name(obj_name):
         model = PorcelainPitcher(name=obj_name)
     elif 'porcelain_teapot' in obj_name:
         model = PorcelainTeapot(name=obj_name)
+    elif 'porcelain_mug' in obj_name:
+        model = PorcelainMug(name=obj_name)
     elif 'squirrel' in obj_name:
         model = Squirrel(name=obj_name)
     else:

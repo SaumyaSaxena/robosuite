@@ -41,6 +41,7 @@ from .xml_objects import (
     YellowLegoSet,
     PorcelainPitcher,
     PorcelainTeapot,
+    PorcelainMug,
     Squirrel,
 )
 from .primitive import *

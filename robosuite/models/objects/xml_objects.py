@@ -561,6 +561,16 @@ class PorcelainTeapot(MujocoXMLObject):
             duplicate_collision_geoms=False,
         )
 
+class PorcelainMug(MujocoXMLObject):
+    def __init__(self, name):
+        super().__init__(
+            xml_path_completion("objects/mujoco_scanned_objects/Threshold_Porcelain_Coffee_Mug_All_Over_Bead_White/model.xml"),
+            name=name,
+            joints=[dict(type="free", damping="0.0005")],
+            obj_type="all",
+            duplicate_collision_geoms=False,
+        )
+
 class Squirrel(MujocoXMLObject):
     def __init__(self, name):
         super().__init__(
