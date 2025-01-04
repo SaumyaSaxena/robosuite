@@ -511,6 +511,16 @@ class BlueCerealPack(MujocoXMLObject):
             duplicate_collision_geoms=False,
         )
 
+class GreenCoffee(MujocoXMLObject):
+    def __init__(self, name):
+        super().__init__(
+            xml_path_completion("objects/mujoco_scanned_objects/NESCAFE_NESCAFE_TC_STKS_DECAF_6_CT/model.xml"),
+            name=name,
+            joints=[dict(type="free", damping="0.0005")],
+            obj_type="all",
+            duplicate_collision_geoms=False,
+        )
+        
 class OrangeCerealPack(MujocoXMLObject):
     def __init__(self, name):
         super().__init__(

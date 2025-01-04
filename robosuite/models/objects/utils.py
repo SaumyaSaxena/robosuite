@@ -46,6 +46,8 @@ def get_obj_from_name(obj_name):
         model = YellowCerealPack(name=obj_name)
     elif 'blue_cereal_pack' in obj_name:
         model = BlueCerealPack(name=obj_name)
+    elif 'green_coffee' in obj_name:
+        model = GreenCoffee(name=obj_name)
     elif 'orange_cereal_pack' in obj_name:
         model = OrangeCerealPack(name=obj_name)
     elif 'purple_lego_set' in obj_name:

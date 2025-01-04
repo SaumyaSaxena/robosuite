@@ -36,6 +36,7 @@ from .xml_objects import (
     WhiteCerealPack,
     YellowCerealPack,
     BlueCerealPack,
+    GreenCoffee,
     OrangeCerealPack,
     PurpleLegoSet,
     YellowLegoSet,
