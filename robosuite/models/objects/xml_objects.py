@@ -590,3 +590,53 @@ class Squirrel(MujocoXMLObject):
             obj_type="all",
             duplicate_collision_geoms=False,
         )
+
+class Elephant(MujocoXMLObject):
+    def __init__(self, name):
+        super().__init__(
+            xml_path_completion("objects/mujoco_scanned_objects/Elephant/model.xml"),
+            name=name,
+            joints=[dict(type="free", damping="0.0005")],
+            obj_type="all",
+            duplicate_collision_geoms=False,
+        )
+
+class Sheep(MujocoXMLObject):
+    def __init__(self, name):
+        super().__init__(
+            xml_path_completion("objects/mujoco_scanned_objects/LACING_SHEEP/model.xml"),
+            name=name,
+            joints=[dict(type="free", damping="0.0005")],
+            obj_type="all",
+            duplicate_collision_geoms=False,
+        )
+
+class Dog(MujocoXMLObject):
+    def __init__(self, name):
+        super().__init__(
+            xml_path_completion("objects/mujoco_scanned_objects/Dog/model.xml"),
+            name=name,
+            joints=[dict(type="free", damping="0.0005")],
+            obj_type="all",
+            duplicate_collision_geoms=False,
+        )
+
+class Android(MujocoXMLObject):
+    def __init__(self, name):
+        super().__init__(
+            xml_path_completion("objects/mujoco_scanned_objects/Great_Dinos_Triceratops_Toy/model.xml"),
+            name=name,
+            joints=[dict(type="free", damping="0.0005")],
+            obj_type="all",
+            duplicate_collision_geoms=False,
+        )
+
+class PlantPot(MujocoXMLObject):
+    def __init__(self, name):
+        super().__init__(
+            xml_path_completion("objects/mujoco_scanned_objects/Pennington_Electric_Pot_Cabana_4/model.xml"),
+            name=name,
+            joints=[dict(type="free", damping="0.0005")],
+            obj_type="all",
+            duplicate_collision_geoms=False,
+        )

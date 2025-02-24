@@ -60,8 +60,18 @@ def get_obj_from_name(obj_name):
         model = PorcelainTeapot(name=obj_name)
     elif 'porcelain_mug' in obj_name:
         model = PorcelainMug(name=obj_name)
-    elif 'squirrel' in obj_name:
+    elif 'toy_squirrel' in obj_name:
         model = Squirrel(name=obj_name)
+    elif 'toy_elephant' in obj_name:
+        model = Elephant(name=obj_name)
+    elif 'toy_sheep' in obj_name:
+        model = Sheep(name=obj_name)
+    elif 'toy_dog' in obj_name:
+        model = Dog(name=obj_name)
+    elif 'toy_android' in obj_name:
+        model = Android(name=obj_name)
+    elif 'plant_pot' in obj_name:
+        model = PlantPot(name=obj_name)
     else:
         raise NotImplementedError(f'Object with name {obj_name} not available.')
     return model

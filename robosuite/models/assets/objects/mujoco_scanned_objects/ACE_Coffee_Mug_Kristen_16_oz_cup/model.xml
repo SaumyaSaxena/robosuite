@@ -1,4 +1,4 @@
-<mujoco model="mug">
+<mujoco model="red_mug">
   <asset>
     <texture type="2d" name="texture" file="texture.png"/>
     <material name="material_0" texture="texture" specular="0.5" shininess="0.5"/>
@@ -38,8 +38,9 @@
   </asset>
   <worldbody>
     <body>
-    <body name="object" pos="-0.3 0.5 0.03">
+    <body name="object">
       <geom material="material_0" mesh="model" type="mesh" contype="0" conaffinity="0" group="1"/>
+      <geom material="material_0" mesh="model" type="mesh" contype="0" conaffinity="0" group="0"/>
       <geom mesh="model_collision_0" type="mesh" group="4" friction="1 0.005 0.009"/>
       <geom mesh="model_collision_1" type="mesh" group="4" friction="1 0.005 0.009"/>
       <geom mesh="model_collision_2" type="mesh" group="4" friction="1 0.005 0.009"/>
@@ -73,9 +74,9 @@
       <geom mesh="model_collision_30" type="mesh" group="4" friction="1 0.005 0.009"/>
       <geom mesh="model_collision_31" type="mesh" group="4" friction="1 0.005 0.009"/>
     </body>
-    <site rgba="0 0 0 0" size="0.005" pos="0 0 -0.045" name="bottom_site"/>
-    <site rgba="0 0 0 0" size="0.005" pos="0 0 0.03" name="top_site"/>
-    <site rgba="0 0 0 0" size="0.005" pos="0.03 0.03 0" name="horizontal_radius_site"/>
+    <site rgba="1 0 0 1" size="0.005" pos="0 0 -0.00" name="bottom_site"/>
+    <site rgba="0 1 0 1" size="0.005" pos="0 0 0.14" name="top_site"/>
+    <site rgba="0 0 1 1" size="0.005" pos="0.054 0.054 0" name="horizontal_radius_site"/>
     </body>
   </worldbody>
 </mujoco>

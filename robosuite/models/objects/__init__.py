@@ -44,6 +44,11 @@ from .xml_objects import (
     PorcelainTeapot,
     PorcelainMug,
     Squirrel,
+    Elephant,
+    Sheep,
+    Dog,
+    Android,
+    PlantPot
 )
 from .primitive import *
 from .composite import *
